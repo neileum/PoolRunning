@@ -1,0 +1,15 @@
+{
+  "name": "iControl Pool & Spa Automation",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "4.13.0",
+    "morgan": "1.6.0",
+    "socket.io": "1.3.5",
+    "socket.io-client": "1.3.5",
+    "node-schedule": "1.1.1",
+    "sainsmart-16-hid": "0.9.1"
+  }
+}

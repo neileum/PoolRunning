@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="initial-scale=1"/>
+  <title>iControl Pool & Spa Automation</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/3.3.2/css/bootstrap2/bootstrap-switch.min.css">
+  <link rel="stylesheet" type="text/css" href="/styles.css">
+
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+
+  <!-- navbar -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand">
+          iControl Pool & Spa Automation
+        </a>
+      </div>
+    </div>
+  </nav>
+  <!-- end navbar -->
+
+  <!-- main -->
+  <div class="container">
+
+    <div class="row row-led row-led-first">
+      <div class="col-xs-6">
+        <label for="checkbox-R1">Filter Low</label>
+      </div>
+      <div class="col-xs-6">
+        <div class="pull-right">
+          <!-- Just use data-on-color attribute that matches closest to the LED color -->
+          <input type="checkbox" id="checkbox-R1" data-on-color="success">
+        </div>
+      </div>
+    </div>
+
+    <div class="row row-led">
+      <div class="col-xs-6">
+        <label for="checkbox-R2">Filter Vacuum</label>
+      </div>
+      <div class="col-xs-6">
+        <div class="pull-right">
+          <!-- Just use data-on-color attribute that matches closest to the LED color -->
+          <input type="checkbox" id="checkbox-R2" data-on-color="warning">
+        </div>
+      </div>
+    </div>
+
+    <div class="row row-led">
+      <div class="col-xs-6">
+        <label for="checkbox-R3">Filter High</label>
+      </div>
+      <div class="col-xs-6">
+        <div class="pull-right">
+          <!-- Just use data-on-color attribute that matches closest to the LED color -->
+          <input type="checkbox" id="checkbox-R3" data-on-color="warning">
+        </div>
+      </div>
+    </div>
+
+    <div class="row row-led">
+      <div class="col-xs-6">
+        <label for="checkbox-R4">Filter Override</label>
+      </div>
+      <div class="col-xs-6">
+        <div class="pull-right">
+          <!-- Just use data-on-color attribute that matches closest to the LED color -->
+          <input type="checkbox" id="checkbox-R4" data-on-color="danger">
+        </div>
+      </div>
+    </div>
+
+	    <div class="row row-led">
+      <div class="col-xs-6">
+        <label for="checkbox-spaHeat">Spa + Heat</label>
+      </div>
+      <div class="col-xs-6">
+        <div class="pull-right">
+          <!-- Just use data-on-color attribute that matches closest to the LED color -->
+          <input type="checkbox" id="checkbox-spaHeat" data-on-color="danger">
+        </div>
+      </div>
+    </div>
+
+		    <div class="row row-led">
+      <div class="col-xs-6">
+        <label for="checkbox-poolHeat">Pool + Heat</label>
+      </div>
+      <div class="col-xs-6">
+        <div class="pull-right">
+          <!-- Just use data-on-color attribute that matches closest to the LED color -->
+          <input type="checkbox" id="checkbox-poolHeat" data-on-color="danger">
+        </div>
+      </div>
+    </div>
+
+    <div class="row row-led">
+  <div class="col-xs-4">
+    <label for="checkbox-R12">Pool Light</label>
+  </div>
+  <div class="col-xs-8">
+    <div class="pull-right">
+      <!-- Just use data-on-color attribute that matches closest to the LED color -->
+      <input type="checkbox" id="checkbox-R12" data-on-color="warning">
+    </div>
+      <div class="btn-group" role="group" aria-label="light controls">
+        <button type="button" id="button-color" class="btn btn-default" disabled="true"><span class="glyphicon glyphicon-lock" aria-hidden="true"></button>
+        <button type="button" id="button-show" class="btn btn-default" disabled="true"><span class="glyphicon glyphicon-repeat" aria-hidden="true"></button>
+      </div>
+  </div>
+</div>
+
+<div class="row row-led">
+<div class="col-xs-6">
+<label for="checkbox-R14">Yard Light</label>
+</div>
+<div class="col-xs-6">
+<div class="pull-right">
+  <!-- Just use data-on-color attribute that matches closest to the LED color -->
+  <input type="checkbox" id="checkbox-R14" data-on-color="warning">
+</div>
+</div>
+</div>
+
+<div class="row row-led">
+<div class="col-xs-6">
+<label for="checkbox-R15">Bug Zapper</label>
+</div>
+<div class="col-xs-6">
+<div class="pull-right">
+  <!-- Just use data-on-color attribute that matches closest to the LED color -->
+  <input type="checkbox" id="checkbox-R15" data-on-color="primary">
+</div>
+</div>
+</div>
+
+  </div>
+  <!-- end main -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/3.3.2/js/bootstrap-switch.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>
